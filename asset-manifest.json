@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/vodafone-gallery/static/css/main.f4caffee.chunk.css",
+    "main.js": "/vodafone-gallery/static/js/main.2eb5d5e9.chunk.js",
+    "main.js.map": "/vodafone-gallery/static/js/main.2eb5d5e9.chunk.js.map",
+    "runtime-main.js": "/vodafone-gallery/static/js/runtime-main.c2a1dbe3.js",
+    "runtime-main.js.map": "/vodafone-gallery/static/js/runtime-main.c2a1dbe3.js.map",
+    "static/js/2.1aa547af.chunk.js": "/vodafone-gallery/static/js/2.1aa547af.chunk.js",
+    "static/js/2.1aa547af.chunk.js.map": "/vodafone-gallery/static/js/2.1aa547af.chunk.js.map",
+    "index.html": "/vodafone-gallery/index.html",
+    "static/css/main.f4caffee.chunk.css.map": "/vodafone-gallery/static/css/main.f4caffee.chunk.css.map",
+    "static/js/2.1aa547af.chunk.js.LICENSE.txt": "/vodafone-gallery/static/js/2.1aa547af.chunk.js.LICENSE.txt",
+    "static/media/vodafone_logo.e5d27904.svg": "/vodafone-gallery/static/media/vodafone_logo.e5d27904.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2a1dbe3.js",
+    "static/js/2.1aa547af.chunk.js",
+    "static/css/main.f4caffee.chunk.css",
+    "static/js/main.2eb5d5e9.chunk.js"
+  ]
+}

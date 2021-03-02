@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+Vodafone Test Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create a JavaScript App to render all the phones described in /vodafonephones/api/phones.json.
 
-## Available Scripts
+The app should:
+• Display all phones in a gallery layout.
+• Show details of an individual phone when it is selected.
+• It should contain two routes:
+o Gallery route.
+o Phone details route.
 
-In the project directory, you can run:
+Expected App behaviour
 
-### `npm start`
+Gallery route
+• Phones rendered in a Gallery layout.
+• A max of nine phones should be rendered at a time. Pagination should be used to display
+any more phones.
+• Each phone gallery item should display:
+o A combined phone image of the front and back of phone which should be
+rendered at 135px x 160px.
+o A phone name
+o An initial phone price.
+o An initial plan and it's cost per month.
+o If all variants of a phone are out of stock the phone should show as out of stock.
+o A user should be able to filter the phones. E.g. filter by price, brand, o/s etc.
+o A user should be able to sort the phones.
+o Clicking a phone will trigger the Phone details route.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Phone details route
+• Contains more detailed information about a phone.
+• Usersshould be able to navigate between a phone details route and the gallery route.
+• The phone details page should be broken into three sections
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+o Top section
+§ Phone name
+§ Should contain a main phone image but should also allow a user to see
+other images of the phone.
+§ All available phone colours and capacities (e.g. 32GB, 64Gb etc.) should
+be rendered here.
+§ Selecting a different phone colour will update all phone imagesto the
+correct colour.
+§ Selecting a different phone capacity will update the phone pricing
+rendered in the middle section.
+§ A summary about the key headline features of the phone should be
+rendered here.
+§ If a phone variant is out of stock then the colour and capacity should
+have an X through it.
 
-### `npm test`
+o Middle section
+§ Should show how much the phone costs on each of our monthly tariffs
+i.e. the cost of phone on Unlimited Lite, RED Unlimited and RED
+Unlimited Max.
+§ User should be able to select one of these prices.
+§ The associated data allocation and free extra for each tariff should also be
+output.
+§ If the phone price is €0.00 on a particular plan it should be output as Free.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+o Bottom section
+§ Should render more detailed information about the phone. i.e. text
+describing the phone.
+§ Should give the user an overview of the selected phone, the once off
+price and the monthly cost.
+To complete this test:
+• All the data you need is contained in /vodafone-phones/api/phones.json. Analyse it
+carefully.
+• Pay attention to the user experience.
+• Add in some extra functionality and features -show us your imagination!
+• If possible complete the test using React JS, but if not feel free to use Vanilla JS or any
+libraries or frameworks that you like (but show us your work too!).
+• Treat this test as if it should be production ready.
+• Pay attention to performance.
+• The data provided in this test is purely for test purposes, it has no bearing on the prices of
+phones, plans or offers on our production website.
+• Good luck!

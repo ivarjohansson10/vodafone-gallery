@@ -1,17 +1,21 @@
 import React from "react";
 
 class MyFilterButton extends React.Component {
+  
+  
   constructor(props) {
     super(props);
     this.state = {
       enabledFilter: false,
     };
   }
-
+  
+  
   handleChange = () => {
     this.setState({ enabledFilter: !this.state.enabledFilter });
-  };
-
+  }
+  
+  
   render() {
     return (
       <div className="filters">

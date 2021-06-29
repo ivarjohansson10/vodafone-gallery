@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import PhoneThumbnails from "../components/PhoneThumbnails";
 
 class PhoneDetails extends React.Component {
+  
   renderColours() {
     return Object.entries(this.props.data.variants).map(
       ([key, variants], i) => {
@@ -162,6 +163,7 @@ class PhoneDetails extends React.Component {
     document.getElementById("phone-details").style.display = "none";
     document.getElementById("overlay").style.display = "none";
   }
+  
 }
 
 const renderThumbnails = (images) => {
